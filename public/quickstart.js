@@ -48,6 +48,7 @@
         } else {
           // accept the incoming connection and start two-way audio
           conn.accept();
+          conn.getRemoteStream();
         }
       });
 

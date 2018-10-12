@@ -1,14 +1,3 @@
-<a href="https://www.twilio.com">
-  <img src="https://static0.twilio.com/marketing/bundles/marketing/img/logos/wordmark-red.svg" alt="Twilio" width="250" />
-</a>
-
-# Twilio Client Quickstart for Node.js
-[![Build Status](https://travis-ci.org/TwilioDevEd/client-quickstart-node.svg?branch=master)](https://travis-ci.org/TwilioDevEd/client-quickstart-node)
-
-
-This application should give you a ready-made starting point for writing your
-own voice apps with Twilio Client. Before we begin, we need to collect
-all the config values we need to run the application:
 
 | Config&nbsp;Value  | Description |
 | :-------------  |:------------- |
@@ -16,6 +5,7 @@ Account&nbsp;SID | Your primary Twilio account identifier - find this [in the co
 Auth&nbsp;Token | Used to authenticate - [just like the above, you'll find this here](https://www.twilio.com/console).
 TwiML&nbsp;App&nbsp;SID | The TwiML application with a voice URL configured to access your server running this app - create one [in the console here](https://www.twilio.com//console/phone-numbers/dev-tools/twiml-apps). Also, you will need to configure the Voice "REQUEST URL" on the TwiML app once you've got your server up and running.
 Twilio&nbsp;Phone&nbsp;# | A Twilio phone number in [E.164 format](https://en.wikipedia.org/wiki/E.164) - you can [get one here](https://www.twilio.com/console/phone-numbers/incoming)
+Client&nbsp;ID | A unique name / id to be given to the client when started up, this will be used to forward calls from phone to client.
 
 ## Setting Up The Node.js Application
 
@@ -72,9 +62,3 @@ Voice "REQUEST URL" to be your ngrok URL plus `/voice`. For example:
 ```bash
 npm test
 ```
-
-## Meta
-
-* No warranty expressed or implied. Software is as is. Diggity.
-* [MIT License](http://www.opensource.org/licenses/mit-license.html)
-* Lovingly crafted by Twilio Developer Education.

@@ -5,7 +5,7 @@ const nameGenerator = require('../name_generator');
 const config = require('../config');
 
 exports.tokenGenerator = function tokenGenerator() {
-  const identity = nameGenerator();
+  const identity = config.clientId;
   const capability = new ClientCapability({
     accountSid: config.accountSid,
     authToken: config.authToken,
